@@ -1,0 +1,19 @@
+{
+  "name": "johna-kiwi-web",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate \"*.html\"",
+    "lint:css": "stylelint \"*.css\"",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "html-validate": "^11.10.0",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

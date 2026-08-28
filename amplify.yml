@@ -2,7 +2,11 @@ version: 1
 frontend:
   phases:
     build:
-      commands: []
+      commands:
+        - |
+          if [ "${AWS_BRANCH}" != "main" ]; then
+            printf 'User-agent: *\nDisallow: /\n' > robots.txt
+          fi
   artifacts:
     baseDirectory: /
     files:

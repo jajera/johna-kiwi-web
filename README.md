@@ -1,7 +1,6 @@
 # johna-kiwi-web
 
-Main site for [johna.kiwi](https://johna.kiwi). Hosted on AWS Amplify (wired from
-[`platformfuzz/johna-kiwi-infra`](https://github.com/platformfuzz/johna-kiwi-infra)).
+Main site for [johna.kiwi](https://johna.kiwi), hosted on AWS Amplify.
 
 | Environment | Git branch | URL |
 |-------------|------------|-----|
@@ -11,10 +10,6 @@ Main site for [johna.kiwi](https://johna.kiwi). Hosted on AWS Amplify (wired fro
 
 Build config: [`amplify.yml`](amplify.yml). Non-`main` deploys write a `robots.txt`
 that disallows indexing.
-
-## Status
-
-Scaffold only. Content and stack choices land here; infra maps DNS after merge.
 
 ## Promotion flow
 
@@ -30,11 +25,7 @@ staging  -->  https://staging.johna.kiwi  (validate)
 main     -->  https://johna.kiwi
 ```
 
-Amplify auto-builds on push. GitHub rulesets are the gate so production only
-moves when a PR to `main` is green (normally a promotion PR from `staging`).
-
-Do not open feature PRs against `main`. After the first merge, set the GitHub
-default branch to `staging` so new PRs target staging automatically.
+Amplify auto-builds on push. Do not open feature PRs against `main`.
 
 ## Checks
 
@@ -49,30 +40,16 @@ npm ci
 npm test
 ```
 
-Local page preview:
+Local preview:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-## Branch protection (one-time, after CI is green)
+## Branch protection
 
-Rulesets live in [`.github/rulesets/`](.github/rulesets/) with
-`enforcement: disabled` until you turn them on.
+Rulesets live in [`.github/rulesets/`](.github/rulesets/). Create or update with:
 
 ```bash
-# Create/update rulesets, still disabled — review in GitHub first
-./scripts/apply-branch-rulesets.sh
-
-# After the lint check name is visible on a PR, enable
 ./scripts/apply-branch-rulesets.sh --enforce
 ```
-
-Then: GitHub → Settings → Rules → confirm `protect-staging` and `protect-main`.
-
-Optional later: raise `required_approving_review_count` from `0` to `1`.
-
-## Related
-
-- DNS / Amplify Terraform: [platformfuzz/johna-kiwi-infra](https://github.com/platformfuzz/johna-kiwi-infra)
-- GitHub Pages subs: `*.johna.kiwi` via `sites.yaml` in the infra repo

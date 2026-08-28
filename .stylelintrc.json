@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": [
+          "Palatino",
+          "Georgia",
+          "Helvetica",
+          "Arial"
+        ]
+      }
+    ]
+  }
+}

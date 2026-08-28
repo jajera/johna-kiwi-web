@@ -1,6 +1,8 @@
 # johna-kiwi-web
 
-Main site for [johna.kiwi](https://johna.kiwi). Hosted on AWS Amplify (wired from `platformfuzz/johna-kiwi-infra` in Phase 2).
+Main site for [johna.kiwi](https://johna.kiwi). Hosted on AWS Amplify (wired from `platformfuzz/johna-kiwi-infra`).
+
+Build config: [`amplify.yml`](amplify.yml) (static site, no build step).
 
 ## Status
 

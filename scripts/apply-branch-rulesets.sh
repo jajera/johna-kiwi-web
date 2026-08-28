@@ -4,7 +4,7 @@
 # so you can enable in the GitHub UI (or pass --enforce) after checks exist.
 set -euo pipefail
 
-REPO="${REPO:-platformfuzz/johna-kiwi-web}"
+REPO="${REPO:-jajera/johna-kiwi-web}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 ENFORCE=false
 

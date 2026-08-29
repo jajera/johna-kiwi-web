@@ -3,17 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Not found — johna.kiwi</title>
+    <meta name="description" content="Page not found on johna.kiwi">
+    <meta name="theme-color" content="#eef4f6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#071014" media="(prefers-color-scheme: dark)">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Not found - johna.kiwi">
+    <meta property="og:image" content="https://johna.kiwi/assets/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://johna.kiwi/assets/og.png">
+    <link rel="canonical" href="https://johna.kiwi/">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <title>Not found - johna.kiwi</title>
+    <script>
+      (function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {
+          t = null;
+        }
+        if (t === "light" || t === "dark") {
+          document.documentElement.dataset.theme = t;
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=optional"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
+    <!-- build:analytics:start -->
+    <!-- build:analytics:end -->
   </head>
   <body>
-    <main>
-      <p class="brand">johna.kiwi</p>
-      <h1>Not found</h1>
-      <p class="lede">
-        That page does not exist.
-        <a href="/">Back to the home page</a>.
-      </p>
+    <header class="site-header">
+      <a class="brand" href="/">johna.kiwi</a>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">404</p>
+          <h1>That page is not here.</h1>
+          <p class="lede">
+            The link may be old, or the page has not been published yet.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/">Back to johna.kiwi</a>
+            <a class="btn btn-ghost" href="/#writing">Recent writing</a>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

@@ -1,13 +1,27 @@
 version: 1
 frontend:
   phases:
+    preBuild:
+      commands:
+        - npm ci
     build:
       commands:
+        # Renders the Labs and Writing grids. Falls back to data/*.json when
+        # CATALOGUE_URL / POSTS_URL are unset or unreachable.
+        - npm run build
         - |
           if [ "${AWS_BRANCH}" != "main" ]; then
             printf 'User-agent: *\nDisallow: /\n' > robots.txt
           fi
   artifacts:
     baseDirectory: /
+    # Listed explicitly so node_modules and data/ are never deployed.
     files:
-      - '**/*'
+      - 'index.html'
+      - '404.html'
+      - 'styles.css'
+      - 'robots.txt'
+      - 'assets/**/*'
+  cache:
+    paths:
+      - node_modules/**/*

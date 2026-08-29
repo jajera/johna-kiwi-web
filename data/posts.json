@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-08-29T00:39:53Z",
+  "source": "dev.to api (username=jajera)",
+  "items": [
+    {
+      "title": "EKS Metrics: Amazon Managed Prometheus vs Self-Managed Prometheus",
+      "url": "https://dev.to/jajera/eks-metrics-amazon-managed-prometheus-vs-self-managed-prometheus-1ihp",
+      "date": "2026-05-23",
+      "hook": "Greenfield on EKS and need a metrics backend? Compare AMP and in-cluster Prometheus on cost, operations, alerting, and when to hybrid remote_write.",
+      "tags": [
+        "prometheus",
+        "eks",
+        "observability",
+        "amp"
+      ],
+      "readingMinutes": 10
+    },
+    {
+      "title": "Why does my AWS SSO session die so fast? (And how to change it in the console)",
+      "url": "https://dev.to/jajera/why-does-my-aws-sso-session-die-so-fast-and-how-to-change-it-in-the-console-455k",
+      "date": "2026-04-17",
+      "hook": "IAM Identity Center permission sets default to a one-hour session. Here is where that comes from and how to bump session duration using only the AWS console - no Terraform.",
+      "tags": [
+        "aws",
+        "iam",
+        "identitycenter",
+        "sso"
+      ],
+      "readingMinutes": 2
+    },
+    {
+      "title": "Unenroll a Control Tower sandbox member with the AWS CLI",
+      "url": "https://dev.to/jajera/unenroll-a-control-tower-sandbox-member-with-the-aws-cli-22ij",
+      "date": "2026-04-16",
+      "hook": "Use AWS Service Catalog in your Control Tower home region to find the Enroll-Account provisioned product for the member account id, terminate it with retain physical resources, and confirm the record succeeded. Includes console alternative and troubleshooting.",
+      "tags": [
+        "aws",
+        "controltower",
+        "organizations",
+        "cli"
+      ],
+      "readingMinutes": 4
+    },
+    {
+      "title": "IAM Identity Center account assignments for Terraform member accounts",
+      "url": "https://dev.to/jajera/iam-identity-center-account-assignments-for-terraform-member-accounts-4p30",
+      "date": "2026-04-15",
+      "hook": "After Organizations member accounts exist, wire IAM Identity Center so a group and permission set grant access through the AWS access portal, using Terraform SSO Admin and Identity Store APIs.",
+      "tags": [
+        "terraform",
+        "aws",
+        "sso",
+        "organizations"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "title": "Terraform member accounts for a Control Tower sandbox OU and a custom dev OU",
+      "url": "https://dev.to/jajera/terraform-member-accounts-for-a-control-tower-sandbox-ou-and-a-custom-dev-ou-3ff2",
+      "date": "2026-04-15",
+      "hook": "Use Terraform from the organization management account to create a sandbox member under an existing Control Tower sandbox OU, a Development OU, and a second member account, with remote state in S3.",
+      "tags": [
+        "terraform",
+        "aws",
+        "organizations",
+        "iac"
+      ],
+      "readingMinutes": 6
+    },
+    {
+      "title": "GitHub Webhook Secrets and the Terraform Public Registry",
+      "url": "https://dev.to/jajera/github-webhook-secrets-and-the-terraform-public-registry-5ef1",
+      "date": "2026-04-14",
+      "hook": "How the registry GitHub webhook uses a shared signing secret, why editing Secret only in GitHub stops new module versions from publishing, and recovery with Resync plus a new tag or GitHub Redeliver.",
+      "tags": [
+        "terraform",
+        "github",
+        "webhooks",
+        "registry"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "title": "AWS IAM Identity Center: Custom Access Portal URL",
+      "url": "https://dev.to/jajera/aws-iam-identity-center-custom-access-portal-url-963",
+      "date": "2026-04-14",
+      "hook": "How to set a branded awsapps.com subdomain for the AWS access portal, what changes for users, and the one-time constraint administrators should plan for.",
+      "tags": [
+        "aws",
+        "iam",
+        "identitycenter",
+        "security"
+      ],
+      "readingMinutes": 3
+    },
+    {
+      "title": "Configuring AWS Business Support+",
+      "url": "https://dev.to/jajera/configuring-aws-business-support-3kdb",
+      "date": "2026-04-13",
+      "hook": "Subscribe to AWS Business Support+ from the Support Plans console, choose organization or account scope, set IAM and SCP access, and know downgrade and billing basics.",
+      "tags": [
+        "aws",
+        "support",
+        "iam",
+        "organizations"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "title": "Greenfield EKS: Choosing Standard EKS vs EKS Auto Mode Without Legacy Baggage",
+      "url": "https://dev.to/jajera/greenfield-eks-choosing-standard-eks-vs-eks-auto-mode-without-legacy-baggage-39f3",
+      "date": "2026-04-07",
+      "hook": "Starting your first Amazon EKS cluster? Compare Standard EKS and EKS Auto Mode on cost, operational effort, and control - when you are not migrating an existing platform.",
+      "tags": [
+        "eks",
+        "aws",
+        "kubernetes",
+        "automode"
+      ],
+      "readingMinutes": 8
+    },
+    {
+      "title": "Argo CD and AWS CodeConnections: The Upside, the Redeploy Pain, and How I Fixed It",
+      "url": "https://dev.to/jajera/argo-cd-and-aws-codeconnections-the-upside-the-redeploy-pain-and-how-i-fixed-it-2k1m",
+      "date": "2026-03-28",
+      "hook": "CodeConnections removes SSH keys and PATs from the cluster for Argo CD on EKS - but replacing the connection changes the URL. Here is why that hurts and the recovery order that actually works.",
+      "tags": [
+        "argocd",
+        "codeconnections",
+        "eks",
+        "gitops"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "title": "Host a Static Site on EC2 with Terraform (VPC, Optional ALB)",
+      "url": "https://dev.to/jajera/host-a-static-site-on-ec2-with-terraform-vpc-optional-alb-1ba9",
+      "date": "2026-03-28",
+      "hook": "Why you might still put a static site on EC2, how VPC fits in, and a Terraform demo with nginx, robots.txt, optional ALB, and Session Manager by default - versus S3 and CloudFront.",
+      "tags": [
+        "terraform",
+        "ec2",
+        "vpc",
+        "ssm"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "title": "Using GoAccess to View nginx Logs",
+      "url": "https://dev.to/jajera/using-goaccess-to-view-nginx-logs-1d1c",
+      "date": "2026-03-28",
+      "hook": "Install GoAccess, optionally pull nginx access logs from S3, and generate terminal or HTML reports for traffic, status codes, and top URLs.",
+      "tags": [
+        "goaccess",
+        "nginx",
+        "logs",
+        "aws"
+      ],
+      "readingMinutes": 3
+    }
+  ]
+}

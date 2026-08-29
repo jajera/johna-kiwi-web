@@ -3,17 +3,507 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>johna.kiwi</title>
+    <meta
+      name="description"
+      content="John Ajera - Platform Engineer in Wellington, Aotearoa. AWS Community Builder. Writing, labs, and platform notes."
+    >
+    <meta name="theme-color" content="#eef4f6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#071014" media="(prefers-color-scheme: dark)">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="johna.kiwi">
+    <meta property="og:title" content="John Ajera - johna.kiwi">
+    <meta
+      property="og:description"
+      content="Platform engineer in Wellington. Labs, writing, and platform notes from Aotearoa."
+    >
+    <meta property="og:url" content="https://johna.kiwi/">
+    <meta property="og:image" content="https://johna.kiwi/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="John Ajera - johna.kiwi">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="John Ajera - johna.kiwi">
+    <meta
+      name="twitter:description"
+      content="Platform engineer in Wellington. Labs, writing, and platform notes from Aotearoa."
+    >
+    <meta name="twitter:image" content="https://johna.kiwi/assets/og.png">
+    <link rel="canonical" href="https://johna.kiwi/">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <title>johna.kiwi - John Ajera</title>
+    <script>
+      // Set the palette before first paint so the page never flashes.
+      (function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {
+          t = null;
+        }
+        if (t === "light" || t === "dark") {
+          document.documentElement.dataset.theme = t;
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=optional"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
+    <!-- build:analytics:start -->
+    <!-- build:analytics:end -->
   </head>
   <body>
-    <main>
-      <p class="brand">johna.kiwi</p>
-      <h1>Coming soon</h1>
-      <p class="lede">
-        Personal site scaffold. Amplify and apex DNS land after this page is
-        nailed down.
-      </p>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-user" viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="5"></circle>
+          <path d="M20 21a8 8 0 0 0-16 0"></path>
+        </symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24">
+          <path
+            d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"
+          ></path>
+          <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+          <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+        </symbol>
+        <symbol id="i-file" viewBox="0 0 24 24">
+          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+          <path d="M16 13H8M16 17H8M10 9H8"></path>
+        </symbol>
+        <symbol id="i-users" viewBox="0 0 24 24">
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </symbol>
+        <symbol id="i-grid" viewBox="0 0 24 24">
+          <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+          <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+          <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+          <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+        </symbol>
+        <symbol id="i-at" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path>
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </symbol>
+        <symbol id="i-auto" viewBox="0 0 24 24">
+          <path
+            d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"
+          ></path>
+        </symbol>
+        <symbol id="i-light" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path
+            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+          ></path>
+        </symbol>
+        <symbol id="i-dark" viewBox="0 0 24 24">
+          <path
+            d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+          ></path>
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="/">johna.kiwi</a>
+
+      <button
+        class="theme-toggle"
+        type="button"
+        id="theme-toggle"
+        aria-live="polite"
+        title="Change colour theme"
+        hidden
+      >
+        <svg class="icon theme-icon theme-icon-auto" aria-hidden="true" focusable="false">
+          <use href="#i-auto"></use>
+        </svg>
+        <svg class="icon theme-icon theme-icon-light" aria-hidden="true" focusable="false">
+          <use href="#i-light"></use>
+        </svg>
+        <svg class="icon theme-icon theme-icon-dark" aria-hidden="true" focusable="false">
+          <use href="#i-dark"></use>
+        </svg>
+        <span class="visually-hidden" id="theme-label">Colour theme: system</span>
+      </button>
+    </header>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-user"></use></svg>
+        <span>About</span>
+      </a>
+      <a href="#labs">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"></use></svg>
+        <span>Labs</span>
+      </a>
+      <a href="#writing">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-file"></use></svg>
+        <span>Writing</span>
+      </a>
+      <a href="#apps">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-grid"></use></svg>
+        <span>Apps</span>
+      </a>
+      <a href="#community">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"></use></svg>
+        <span>Community</span>
+      </a>
+      <a href="#profiles">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-at"></use></svg>
+        <span>Profiles</span>
+      </a>
+    </nav>
+
+    <main id="main">
+      <section class="hero" id="about" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Platform engineer · AWS Community Builder · Wellington</p>
+          <h1 id="hero-heading">Platforms, automation, and the notes I wish I'd had.</h1>
+          <p class="lede">
+            I'm John Ajera, a platform engineer at Earth Sciences New Zealand
+            (GeoNet). I build developer platforms and reusable infrastructure -
+            and write up the parts that took me too long to work out.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#labs">
+              <span>Browse the labs</span>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn-ghost" href="#writing">Recent writing</a>
+          </div>
+        </div>
+
+        <aside class="focus-panel" aria-labelledby="focus-heading">
+          <h2 id="focus-heading" class="focus-label">What I work on</h2>
+          <ol class="focus-list">
+            <li>
+              <span class="focus-num" aria-hidden="true">01</span>
+              <span>Developer platforms and internal tooling</span>
+            </li>
+            <li>
+              <span class="focus-num" aria-hidden="true">02</span>
+              <span>Terraform modules and infrastructure as code</span>
+            </li>
+            <li>
+              <span class="focus-num" aria-hidden="true">03</span>
+              <span>AWS and Azure architecture, networking and delivery</span>
+            </li>
+            <li>
+              <span class="focus-num" aria-hidden="true">04</span>
+              <span>Containers, EKS, and CI/CD automation</span>
+            </li>
+          </ol>
+          <p class="focus-note">
+            Windows and physical servers, then virtualisation, now cloud native.
+          </p>
+        </aside>
+      </section>
+
+      <section class="section" id="labs" aria-labelledby="labs-heading">
+        <div class="section-head">
+          <h2 id="labs-heading">Labs and walkthroughs</h2>
+          <a class="section-link" href="https://guides.johna.kiwi/" rel="noopener noreferrer">
+            All guides
+          </a>
+        </div>
+
+        <div class="card-grid">
+          <!-- build:labs:start -->
+          <a class="card" href="https://jajera.github.io/buildpacks-eks-walkthrough/" rel="noopener noreferrer">
+            <p class="card-kicker">containers</p>
+            <h3 class="card-title">Buildpacks on EKS</h3>
+            <p class="card-body">Prove buildpacks on EKS - platform-owned image builds, app teams push code only.</p>
+            <span class="card-tag">eks</span>
+          </a>
+
+          <a class="card" href="https://jajera.github.io/kueue-eks-walkthrough/" rel="noopener noreferrer">
+            <p class="card-kicker">containers</p>
+            <h3 class="card-title">Kueue on EKS</h3>
+            <p class="card-body">Deploy Kueue on Amazon EKS Auto Mode with eksctl and GitOps - cap concurrent batch jobs and share quota across projects.</p>
+            <span class="card-tag">eks</span>
+          </a>
+
+          <a class="card" href="https://jajera.github.io/eks-control-plane-config/" rel="noopener noreferrer">
+            <p class="card-kicker">containers</p>
+            <h3 class="card-title">Amazon EKS control plane parameters</h3>
+            <p class="card-body">What EKS control plane UpdateClusterConfig changes - and what stays the same on clusters created before the feature.</p>
+            <span class="card-tag">eks</span>
+          </a>
+          <!-- build:labs:end -->
+        </div>
+      </section>
+
+      <section class="section" id="writing" aria-labelledby="writing-heading">
+        <div class="section-head">
+          <h2 id="writing-heading">Recent writing</h2>
+          <a class="section-link" href="https://dev.to/jajera" rel="noopener noreferrer">
+            All posts on Dev.to
+          </a>
+        </div>
+
+        <div class="card-grid">
+          <!-- build:writing:start -->
+          <a class="card" href="https://dev.to/jajera/eks-metrics-amazon-managed-prometheus-vs-self-managed-prometheus-1ihp" rel="noopener noreferrer">
+            <p class="card-kicker">prometheus</p>
+            <h3 class="card-title">EKS Metrics: Amazon Managed Prometheus vs Self-Managed Prometheus</h3>
+            <p class="card-body">Greenfield on EKS and need a metrics backend? Compare AMP and in-cluster Prometheus on cost, operations, alerting, and when to hybrid remote_write.</p>
+            <span class="card-tag">eks</span>
+          </a>
+
+          <a class="card" href="https://dev.to/jajera/why-does-my-aws-sso-session-die-so-fast-and-how-to-change-it-in-the-console-455k" rel="noopener noreferrer">
+            <p class="card-kicker">aws</p>
+            <h3 class="card-title">Why does my AWS SSO session die so fast? (And how to change it in the console)</h3>
+            <p class="card-body">IAM Identity Center permission sets default to a one-hour session. Here is where that comes from and how to bump session duration using only the AWS console - no Terraform.</p>
+            <span class="card-tag">iam</span>
+          </a>
+
+          <a class="card" href="https://dev.to/jajera/unenroll-a-control-tower-sandbox-member-with-the-aws-cli-22ij" rel="noopener noreferrer">
+            <p class="card-kicker">aws</p>
+            <h3 class="card-title">Unenroll a Control Tower sandbox member with the AWS CLI</h3>
+            <p class="card-body">Use AWS Service Catalog in your Control Tower home region to find the Enroll-Account provisioned product for the member account id, terminate it with retain physical resources, and confirm the record succeeded. Includes console alternative and troubleshooting.</p>
+            <span class="card-tag">controltower</span>
+          </a>
+          <!-- build:writing:end -->
+        </div>
+      </section>
+
+      <section class="section" id="apps" aria-labelledby="apps-heading">
+        <div class="section-head">
+          <h2 id="apps-heading">Apps</h2>
+          <a class="section-link" href="https://jajera.github.io/gitprofile" rel="noopener noreferrer">
+            All projects
+          </a>
+        </div>
+
+        <div class="card-grid">
+          <a
+            class="card"
+            href="https://jajera.github.io/geonet-quake-classifier/"
+            rel="noopener noreferrer"
+          >
+            <p class="card-kicker">tool</p>
+            <h3 class="card-title">GeoNet quake classifier</h3>
+            <p class="card-body">
+              Classify and map GeoNet earthquakes in the browser.
+            </p>
+            <span class="card-tag">geonet</span>
+          </a>
+
+          <a
+            class="card"
+            href="https://jajera.github.io/aurora-nz-nowcast/"
+            rel="noopener noreferrer"
+          >
+            <p class="card-kicker">tool</p>
+            <h3 class="card-title">Aurora NZ nowcast</h3>
+            <p class="card-body">
+              Real-time aurora visibility for New Zealand from GeoNet geomagnetic
+              data.
+            </p>
+            <span class="card-tag">aurora</span>
+          </a>
+
+          <a
+            class="card"
+            href="https://jajera.github.io/mermaid-diagram-editor/"
+            rel="noopener noreferrer"
+          >
+            <p class="card-kicker">tool</p>
+            <h3 class="card-title">Mermaid diagram editor</h3>
+            <p class="card-body">
+              Edit and export Mermaid diagrams without leaving the browser.
+            </p>
+            <span class="card-tag">mermaid</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="community" aria-labelledby="community-heading">
+        <div class="section-head">
+          <h2 id="community-heading">Community</h2>
+        </div>
+
+        <div class="panel">
+          <p class="lede">
+            AWS Community Builder in Network and Content Delivery. Web Admin Lead
+            for AWS User Group Aotearoa.
+          </p>
+          <p class="lede">
+            Organising committee for AWS Community Day Aotearoa and AWS Community
+            Day Oceania (Virtual). AWS UG Leader - Wellington, NZ.
+          </p>
+          <ul class="tag-row">
+            <li>Speaker - VPC Lattice, Community Day Aotearoa 2025</li>
+            <li>Speaker - Amazon Q, Wellington Chapter 2025</li>
+            <li>Predator Free NZ - Manawa Karioi Reserve</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="profiles" aria-labelledby="profiles-heading">
+        <div class="section-head">
+          <h2 id="profiles-heading">Elsewhere</h2>
+          <a class="section-link" href="https://jajera.github.io/gitprofile" rel="noopener noreferrer">
+            Full project index
+          </a>
+        </div>
+
+        <div class="card-grid card-grid-tight">
+          <a class="card card-compact" href="https://github.com/jajera" rel="noopener noreferrer">
+            <h3 class="card-title">GitHub</h3>
+            <p class="card-body">Modules, actions, and labs across five orgs.</p>
+          </a>
+          <a class="card card-compact" href="https://dev.to/jajera" rel="noopener noreferrer">
+            <h3 class="card-title">Dev.to</h3>
+            <p class="card-body">Notes on AWS, Terraform, and cloud native.</p>
+          </a>
+          <a
+            class="card card-compact"
+            href="https://www.linkedin.com/in/john-ajera"
+            rel="noopener noreferrer"
+          >
+            <h3 class="card-title">LinkedIn</h3>
+            <p class="card-body">Work history and community involvement.</p>
+          </a>
+          <a
+            class="card card-compact"
+            href="https://www.youtube.com/@JohnAjera"
+            rel="noopener noreferrer"
+          >
+            <h3 class="card-title">YouTube</h3>
+            <p class="card-body">Occasional demos and recordings.</p>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p><span class="brand-name">johna.kiwi</span> · John Ajera · Wellington, Aotearoa</p>
+    </footer>
+
+    <script>
+      (function () {
+        var modes = ["auto", "light", "dark"];
+        var labels = {
+          auto: "Colour theme: system",
+          light: "Colour theme: light",
+          dark: "Colour theme: dark"
+        };
+        var root = document.documentElement;
+        var button = document.getElementById("theme-toggle");
+        var label = document.getElementById("theme-label");
+        if (!button) {
+          return;
+        }
+
+        function current() {
+          var t = root.dataset.theme;
+          return t === "light" || t === "dark" ? t : "auto";
+        }
+
+        function apply(mode) {
+          if (mode === "auto") {
+            delete root.dataset.theme;
+            try {
+              localStorage.removeItem("theme");
+            } catch (e) {
+              /* storage unavailable */
+            }
+          } else {
+            root.dataset.theme = mode;
+            try {
+              localStorage.setItem("theme", mode);
+            } catch (e) {
+              /* storage unavailable */
+            }
+          }
+          label.textContent = labels[mode];
+          button.setAttribute("title", labels[mode]);
+        }
+
+        apply(current());
+        button.hidden = false;
+
+        button.addEventListener("click", function () {
+          apply(modes[(modes.indexOf(current()) + 1) % modes.length]);
+        });
+      })();
+
+      (function () {
+        var nav = document.querySelector(".nav");
+        if (!nav || !("IntersectionObserver" in window)) {
+          return;
+        }
+
+        var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
+        var sections = links
+          .map(function (link) {
+            return document.getElementById(link.getAttribute("href").slice(1));
+          })
+          .filter(Boolean);
+
+        if (!sections.length) {
+          return;
+        }
+
+        var byId = {};
+        links.forEach(function (link) {
+          byId[link.getAttribute("href").slice(1)] = link;
+        });
+
+        function setCurrent(id) {
+          links.forEach(function (link) {
+            if (link.getAttribute("href") === "#" + id) {
+              link.setAttribute("aria-current", "true");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+        }
+
+        var visible = new Map();
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                visible.set(entry.target.id, entry.intersectionRatio);
+              } else {
+                visible.delete(entry.target.id);
+              }
+            });
+
+            var best = null;
+            var bestRatio = 0;
+            visible.forEach(function (ratio, id) {
+              if (ratio > bestRatio) {
+                bestRatio = ratio;
+                best = id;
+              }
+            });
+            if (best && byId[best]) {
+              setCurrent(best);
+            }
+          },
+          {
+            rootMargin: "-28% 0px -55% 0px",
+            threshold: [0, 0.25, 0.5, 0.75, 1]
+          }
+        );
+
+        sections.forEach(function (section) {
+          observer.observe(section);
+        });
+      })();
+    </script>
   </body>
 </html>

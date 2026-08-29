@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-08-29T00:39:46Z",
+  "source": "bootstrap: guides frontmatter",
+  "items": [
+    {
+      "slug": "2026-08-23-buildpacks-eks-walkthrough",
+      "title": "Buildpacks on EKS",
+      "date": "2026-08-23",
+      "type": "walkthrough",
+      "category": "containers",
+      "tags": [
+        "eks",
+        "buildpacks",
+        "kpack",
+        "ecr",
+        "argo-cd",
+        "codecommit",
+        "gitops"
+      ],
+      "hook": "Prove buildpacks on EKS - platform-owned image builds, app teams push code only.",
+      "url": "https://jajera.github.io/buildpacks-eks-walkthrough/",
+      "repo": ""
+    },
+    {
+      "slug": "2026-08-21-kueue-eks-walkthrough",
+      "title": "Kueue on EKS",
+      "date": "2026-08-21",
+      "type": "walkthrough",
+      "category": "containers",
+      "tags": [
+        "eks",
+        "kueue",
+        "batch",
+        "argo-cd",
+        "auto-mode",
+        "gitops"
+      ],
+      "hook": "Deploy Kueue on Amazon EKS Auto Mode with eksctl and GitOps - cap concurrent batch jobs and share quota across projects.",
+      "url": "https://jajera.github.io/kueue-eks-walkthrough/",
+      "repo": ""
+    },
+    {
+      "slug": "2026-08-19-eks-control-plane-config",
+      "title": "Amazon EKS control plane parameters",
+      "date": "2026-08-19",
+      "type": "walkthrough",
+      "category": "containers",
+      "tags": [
+        "eks",
+        "kubernetes",
+        "scheduler",
+        "hpa",
+        "kube-apiserver"
+      ],
+      "hook": "What EKS control plane UpdateClusterConfig changes - and what stays the same on clusters created before the feature.",
+      "url": "https://jajera.github.io/eks-control-plane-config/",
+      "repo": ""
+    },
+    {
+      "slug": "2026-08-16-seiscomp-ecs-lab",
+      "title": "SeisComP ECS lab",
+      "date": "2026-08-16",
+      "type": "walkthrough",
+      "category": "containers",
+      "tags": [
+        "seiscomp",
+        "ecs",
+        "fargate",
+        "rds",
+        "efs",
+        "seismology",
+        "gsm"
+      ],
+      "hook": "Unofficial SeisComP lab on ECS Fargate with RDS EFS and EC2 GUI.",
+      "url": "https://jajera.github.io/seiscomp-ecs-lab/",
+      "repo": "https://github.com/jajera/seiscomp-ecs-lab"
+    },
+    {
+      "slug": "2026-08-15-seiscomp-containers-lab",
+      "title": "SeisComP containers lab",
+      "date": "2026-08-15",
+      "type": "walkthrough",
+      "category": "containers",
+      "tags": [
+        "seiscomp",
+        "docker",
+        "compose",
+        "seismology",
+        "ec2",
+        "gsm"
+      ],
+      "hook": "Unofficial LEARN SeisComP lab as one Docker Compose service per process using gsm.",
+      "url": "https://jajera.github.io/seiscomp-containers-lab/",
+      "repo": "https://github.com/jajera/seiscomp-containers-lab"
+    },
+    {
+      "slug": "2026-08-15-seiscomp-lab",
+      "title": "SeisComP lab",
+      "date": "2026-08-15",
+      "type": "walkthrough",
+      "category": "general",
+      "tags": [
+        "seiscomp",
+        "seismology",
+        "ec2",
+        "ubuntu",
+        "gsm",
+        "geofon"
+      ],
+      "hook": "Single host SeisComP learning lab on AWS Ubuntu.",
+      "url": "https://jajera.github.io/seiscomp-lab/",
+      "repo": "https://github.com/jajera/seiscomp-lab"
+    },
+    {
+      "slug": "2026-08-12-privatelink-conduit",
+      "title": "PrivateLink path between producer and consumer VPCs",
+      "date": "2026-08-12",
+      "type": "walkthrough",
+      "category": "networking",
+      "tags": [
+        "privatelink",
+        "vpc",
+        "nlb",
+        "cross-region",
+        "terraform",
+        "multi-account"
+      ],
+      "hook": "Cross-account PrivateLink into a private 3-tier API - same-Region Sydney, cross-Region Melbourne, and why New Zealand cannot join the cross-Region path today.",
+      "url": "https://jajera.github.io/privatelink-conduit/",
+      "repo": "https://github.com/jajera/privatelink-conduit"
+    },
+    {
+      "slug": "2026-08-11-ec2-application-status-checks",
+      "title": "Amazon EC2 application status checks",
+      "date": "2026-08-11",
+      "type": "walkthrough",
+      "category": "general",
+      "tags": [
+        "ec2",
+        "autoscaling",
+        "monitoring",
+        "health-checks"
+      ],
+      "hook": "Amazon EC2 application status checks walkthrough for in network HTTP probes and optional Auto Scaling replacement.",
+      "url": "https://jajera.github.io/ec2-application-status-checks-walkthrough/",
+      "repo": "https://github.com/jajera/ec2-application-status-checks-walkthrough"
+    },
+    {
+      "slug": "2026-07-15-bind-to-route53-mirror",
+      "title": "BIND to Route 53 mirror",
+      "date": "2026-07-15",
+      "type": "walkthrough",
+      "category": "dns",
+      "tags": [
+        "bind",
+        "route53",
+        "hybrid-dns",
+        "lambda",
+        "axfr",
+        "vpn",
+        "terraform"
+      ],
+      "hook": "Keep on-prem BIND authoritative and mirror zones into Route 53 so cloud workloads resolve the same private DNS names.",
+      "url": "https://jajera.github.io/bind-to-route53-mirror-walkthrough/",
+      "repo": "https://github.com/jajera/bind-to-route53-mirror-demo"
+    },
+    {
+      "slug": "2026-07-14-kiro-birthday-2026-challenge",
+      "title": "Kiro Birthday 2026 Challenge",
+      "date": "2026-07-14",
+      "type": "article",
+      "category": "tooling",
+      "tags": [
+        "kiro",
+        "hooks",
+        "birthday-challenge",
+        "docs-sync",
+        "aws-builder-center"
+      ],
+      "hook": "Kiro Birthday Week Day 1 - a docs sync check hook, with Builder Center write-up, demo video, and LinkedIn share.",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "slug": "2026-07-12-pr-readiness-coach",
+      "title": "PR Readiness Coach",
+      "date": "2026-07-12",
+      "type": "walkthrough",
+      "category": "tooling",
+      "tags": [
+        "github-actions",
+        "bedrock",
+        "cdk",
+        "amplify",
+        "ci",
+        "productivity"
+      ],
+      "hook": "AI coach that checks branch readiness before you open a pull request - local CLI, AWS API, GitHub Actions comments, Kiro hooks, and an owner UI.",
+      "url": "https://jajera.github.io/pr-readiness-coach-walkthrough/",
+      "repo": "https://github.com/jajera/pr-readiness-coach"
+    },
+    {
+      "slug": "2026-07-11-aws-private-connectivity-patterns",
+      "title": "AWS private connectivity patterns",
+      "date": "2026-07-11",
+      "type": "walkthrough",
+      "category": "networking",
+      "tags": [
+        "privatelink",
+        "vpc-lattice",
+        "peering",
+        "transit-gateway",
+        "cloud-wan",
+        "multi-account"
+      ],
+      "hook": "Deploy and compare five private cross-account patterns - VPC Peering, PrivateLink, VPC Lattice, Transit Gateway, and Cloud WAN.",
+      "url": "https://jajera.github.io/aws-private-connectivity-patterns-walkthrough/",
+      "repo": "https://github.com/jajera/aws-private-connectivity-patterns-walkthrough"
+    },
+    {
+      "slug": "2026-06-24-s3-vectors-rag",
+      "title": "S3 Vectors RAG workload",
+      "date": "2026-06-24",
+      "type": "walkthrough",
+      "category": "storage",
+      "tags": [
+        "s3-vectors",
+        "bedrock",
+        "rag",
+        "lambda",
+        "amplify",
+        "terraform"
+      ],
+      "hook": "Vector search without a vector database - Amazon S3 Vectors, Bedrock embeddings, and a serverless RAG app.",
+      "url": "https://jajera.github.io/s3-vectors-rag-workload/",
+      "repo": "https://github.com/jajera/s3-vectors-rag-workload"
+    },
+    {
+      "slug": "2026-06-23-s3-annotations",
+      "title": "S3 Annotations walkthrough",
+      "date": "2026-06-23",
+      "type": "walkthrough",
+      "category": "storage",
+      "tags": [
+        "s3-annotations",
+        "geonet",
+        "lambda",
+        "amplify",
+        "terraform"
+      ],
+      "hook": "Attach structured JSON metadata to S3 objects - demonstrated on GeoNet volcano camera imagery from Te Kaha.",
+      "url": "https://jajera.github.io/s3-annotations-walkthrough/",
+      "repo": "https://github.com/jajera/terraform-aws-s3-annotations-demo"
+    },
+    {
+      "slug": "2026-06-22-route53-classic-multi-account",
+      "title": "Classic Route 53 multi-account DNS",
+      "date": "2026-06-22",
+      "type": "walkthrough",
+      "category": "dns",
+      "tags": [
+        "route53",
+        "multi-account",
+        "private-dns",
+        "terraform"
+      ],
+      "hook": "Share one private hosted zone across three accounts and two regions - classic VPC association authorization, no Profiles or RAM.",
+      "url": "https://jajera.github.io/route53-classic-multi-account-walkthrough/",
+      "repo": "https://github.com/jajera/route53-classic-multi-account-walkthrough"
+    },
+    {
+      "slug": "2026-06-21-event-driven-serverless",
+      "title": "Event-driven serverless platform",
+      "date": "2026-06-21",
+      "type": "walkthrough",
+      "category": "serverless",
+      "tags": [
+        "eventbridge",
+        "lambda",
+        "sqs",
+        "amplify",
+        "terraform",
+        "gnss"
+      ],
+      "hook": "Deploy an AWS event-driven platform for GNSS RINEX ingest, TEC calibration, and visualization.",
+      "url": "https://jajera.github.io/aws-event-driven-serverless-walkthrough/",
+      "repo": "https://github.com/jajera/aws-event-driven-serverless-walkthrough"
+    },
+    {
+      "slug": "2026-06-20-aws-gcp-interconnect",
+      "title": "AWS–GCP Interconnect",
+      "date": "2026-06-20",
+      "type": "walkthrough",
+      "category": "networking",
+      "tags": [
+        "interconnect",
+        "gcp",
+        "hybrid",
+        "terraform",
+        "private-connectivity"
+      ],
+      "hook": "Private connectivity between AWS and GCP - no VPN, no colocation, no public internet.",
+      "url": "https://jajera.github.io/aws-gcp-interconnect-walkthrough/",
+      "repo": "https://github.com/jajera/aws-gcp-interconnect-walkthrough"
+    },
+    {
+      "slug": "2026-06-20-ecs-express-mode",
+      "title": "ECS Express Mode",
+      "date": "2026-06-20",
+      "type": "walkthrough",
+      "category": "containers",
+      "tags": [
+        "ecs",
+        "express-mode",
+        "alb",
+        "terraform",
+        "fargate"
+      ],
+      "hook": "Deploy HTTP/HTTPS containers on ECS with a single Terraform resource - managed ALB, auto scaling, and HTTPS URL included.",
+      "url": "https://jajera.github.io/ecs-express-mode-walkthrough/",
+      "repo": "https://github.com/jajera/ecs-express-mode-walkthrough"
+    },
+    {
+      "slug": "2026-06-20-lambda-managed-instances",
+      "title": "Lambda Managed Instances",
+      "date": "2026-06-20",
+      "type": "walkthrough",
+      "category": "serverless",
+      "tags": [
+        "lambda",
+        "managed-instances",
+        "capacity-provider",
+        "iam"
+      ],
+      "hook": "Theory-first guide to Lambda Managed Instances - fundamentals, quotas, and hands-on walkthrough pages as they publish.",
+      "url": "https://jajera.github.io/aws-lambda-managed-instance-walkthrough/",
+      "repo": "https://github.com/jajera/aws-lambda-managed-instance-walkthrough"
+    },
+    {
+      "slug": "2026-06-20-s3-files-workloads",
+      "title": "S3 Files workloads",
+      "date": "2026-06-20",
+      "type": "walkthrough",
+      "category": "storage",
+      "tags": [
+        "s3-files",
+        "efs",
+        "ec2",
+        "lambda",
+        "ecs",
+        "terraform"
+      ],
+      "hook": "Mount an S3 bucket as an NFS file system on EC2, ECS Fargate, and Lambda - CLI and Terraform paths.",
+      "url": "https://jajera.github.io/s3-files-workloads/",
+      "repo": "https://github.com/jajera/s3-files-workloads"
+    },
+    {
+      "slug": "2026-06-19-amazon-vpc-ipam-multi-account",
+      "title": "VPC IPAM multi-account",
+      "date": "2026-06-19",
+      "type": "walkthrough",
+      "category": "networking",
+      "tags": [
+        "ipam",
+        "ram",
+        "multi-account",
+        "terraform",
+        "vpc"
+      ],
+      "hook": "Org-wide VPC IPAM across four accounts and two regions - delegated admin, RAM pool sharing, and pool-backed workload VPCs.",
+      "url": "https://jajera.github.io/amazon-vpc-ipam-multi-account-walkthrough/",
+      "repo": "https://github.com/jajera/amazon-vpc-ipam-multi-account-walkthrough"
+    },
+    {
+      "slug": "2026-06-18-aws-iot-walkthrough",
+      "title": "AWS IoT Walkthrough",
+      "date": "2026-06-18",
+      "type": "walkthrough",
+      "category": "iot",
+      "tags": [
+        "iot-core",
+        "esp32",
+        "mqtt",
+        "terraform",
+        "amplify",
+        "lambda"
+      ],
+      "hook": "Connect ESP32-S3 to AWS IoT Core - pretest flash and serial, then Terraform for rules, Lambda, DynamoDB, API, and Amplify dashboard.",
+      "url": "https://jajera.github.io/aws-iot-walkthrough/",
+      "repo": "https://github.com/jajera/aws-iot-walkthrough"
+    },
+    {
+      "slug": "2026-04-07-greenfield-eks-standard-vs-auto-mode",
+      "title": "Greenfield EKS - Standard vs Auto Mode",
+      "date": "2026-04-07",
+      "type": "article",
+      "category": "containers",
+      "tags": [
+        "eks",
+        "kubernetes",
+        "auto-mode",
+        "aws",
+        "decision-guide"
+      ],
+      "hook": "Practical greenfield guide to choosing Standard EKS versus EKS Auto Mode - cost, who runs what, and a decision rubric without legacy baggage.",
+      "url": "",
+      "repo": ""
+    },
+    {
+      "slug": "2025-11-15-iam-policy-guard-hackathon",
+      "title": "IAM Policy Guard (Hackathon 2025)",
+      "date": "2025-11-15",
+      "type": "article",
+      "category": "serverless",
+      "tags": [
+        "iam",
+        "security",
+        "lambda",
+        "cloudtrail",
+        "hackathon",
+        "bedrock"
+      ],
+      "hook": "Serverless IAM guard that detects dangerous policy changes and remediates them in seconds - Lambda Hackathon 2025.",
+      "url": "",
+      "repo": "https://github.com/jajera/hackathon-2025-iam-policy-guard"
+    },
+    {
+      "slug": "2025-09-18-vpc-lattice-community-day",
+      "title": "VPC Lattice at AWS Community Day Aotearoa 2025",
+      "date": "2025-09-18",
+      "type": "article",
+      "category": "networking",
+      "tags": [
+        "vpc-lattice",
+        "community-day",
+        "talk",
+        "service-networking"
+      ],
+      "hook": "Talk resources for modern service networking with VPC Lattice - agenda, links, and a Terraform example.",
+      "url": "",
+      "repo": "https://github.com/jajera/aws-community-day-aotearoa-2025-vpclattice-talk"
+    },
+    {
+      "slug": "2025-05-05-amazon-q-cli-slides",
+      "title": "Amazon Q CLI slides",
+      "date": "2025-05-05",
+      "type": "article",
+      "category": "tooling",
+      "tags": [
+        "amazon-q",
+        "cli",
+        "developer-tools",
+        "slides"
+      ],
+      "hook": "Slide deck on Amazon Q for development - history, install, CLI habits, and demo projects scaffolded with q chat.",
+      "url": "",
+      "repo": "https://github.com/jajera/amazon-q-cli-slides"
+    },
+    {
+      "slug": "2025-01-07-github-actions-working-directory",
+      "title": "Understanding GitHub Actions working directory",
+      "date": "2025-01-07",
+      "type": "article",
+      "category": "tooling",
+      "tags": [
+        "github-actions",
+        "cicd",
+        "automation",
+        "paths"
+      ],
+      "hook": "Where GitHub Actions stores files during a run - default workspace, working-directory scopes, action paths, and path-related environment variables.",
+      "url": "",
+      "repo": ""
+    }
+  ]
+}

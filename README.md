@@ -1,7 +1,11 @@
 # johna-kiwi-web
 
+<<<<<<< HEAD
 Personal site for [John Ajera](https://johna.kiwi) - writing, profiles, and
 platform notes. Hosted on AWS Amplify.
+=======
+Main site for [johna.kiwi](https://johna.kiwi), hosted on AWS Amplify.
+>>>>>>> origin/main
 
 | Environment | Git branch | URL |
 |-------------|------------|-----|
@@ -27,6 +31,7 @@ main     -->  https://johna.kiwi
 ```
 
 Amplify auto-builds on push. Do not open feature PRs against `main`.
+<<<<<<< HEAD
 
 ## Content feeds
 
@@ -66,6 +71,8 @@ npm run build
 # Snapshot-only build
 npm run build
 ```
+=======
+>>>>>>> origin/main
 
 ## Checks
 
@@ -86,10 +93,15 @@ Local preview:
 npm start
 ```
 
+<<<<<<< HEAD
 Serves the site at [http://localhost:8080](http://localhost:8080).
 
 ## Branch protection
 
+=======
+## Branch protection
+
+>>>>>>> origin/main
 Rulesets live in [`.github/rulesets/`](.github/rulesets/). Create or update with:
 
 ```bash

@@ -5,6 +5,9 @@
       "lower",
       {
         "ignoreKeywords": [
+          "Outfit",
+          "Manrope",
+          "Segoe UI",
           "Palatino",
           "Georgia",
           "Helvetica",

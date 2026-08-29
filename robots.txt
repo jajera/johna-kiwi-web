@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+# Amplify overwrites this with Disallow: / on non-main deploys.

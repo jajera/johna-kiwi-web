@@ -44,8 +44,9 @@ committed snapshots so the build still succeeds.
 ### Google Analytics (GA4)
 
 Production Amplify sets `GA_MEASUREMENT_ID` (for example `G-XXXXXXXXXX`).
-`npm run build` injects the gtag snippet into `index.html` and `404.html` when
-that variable is present; staging and PR builds leave the markers empty.
+`npm run build` injects the gtag snippet into `index.html`, `404.html`, and
+`stats/index.html` when that variable is present; staging and PR builds leave
+the markers empty.
 
 ```bash
 GA_MEASUREMENT_ID=G-XXXXXXXXXX npm run build
@@ -54,8 +55,13 @@ GA_MEASUREMENT_ID=G-XXXXXXXXXX npm run build
 Create a GA4 property in Google Analytics, copy the Measurement ID, then set it
 on the Amplify `main` branch (Terraform `ga_measurement_id` or Console env).
 
-Amplify CSP must allow `https://www.googletagmanager.com` and
-`https://*.google-analytics.com` (see `johna-kiwi-infra` Amplify custom headers).
+Amplify CSP must allow `https://www.googletagmanager.com`,
+`https://*.google-analytics.com`, and (for `/stats`)
+`frame-src https://datastudio.google.com https://lookerstudio.google.com`
+(see `johna-kiwi-infra` Amplify custom headers).
+
+Unlisted traffic dashboards live at `/stats` (`stats/index.html`, `noindex`).
+Not linked from the homepage.
 
 ```bash
 # Local build against live feeds

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "npm run lint:html && npm run lint:css",
-    "lint:html": "html-validate \"*.html\"",
+    "lint:html": "html-validate \"*.html\" \"stats/**/*.html\"",
     "lint:css": "stylelint \"*.css\"",
     "test": "npm run lint",
     "start": "serve . -l 8080 --no-clipboard",

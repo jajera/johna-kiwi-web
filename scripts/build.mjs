@@ -206,4 +206,9 @@ let notFoundHtml = await readFile(notFoundPath, "utf8");
 notFoundHtml = replaceIn(notFoundHtml, "analytics", gaBlock, "404.html");
 await writeFile(notFoundPath, notFoundHtml);
 
-console.log("index.html and 404.html updated");
+const statsPath = join(root, "stats", "index.html");
+let statsHtml = await readFile(statsPath, "utf8");
+statsHtml = replaceIn(statsHtml, "analytics", gaBlock, "stats/index.html");
+await writeFile(statsPath, statsHtml);
+
+console.log("index.html, 404.html, and stats/index.html updated");
